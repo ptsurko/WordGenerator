@@ -1,0 +1,9 @@
+{
+	"name": "WordGenerator",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_title": "Word Generator",
+		"default_popup": "popup.html"
+	}
+}

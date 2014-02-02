@@ -1,0 +1,59 @@
+<script type="text/javascript" src="popup.js"></script>
+<style type="text/css">
+	.popup-content {
+		min-width: 300px;
+		margin: 10px;
+	}
+
+	.popup-header {
+		padding-bottom: 0px;
+		font-size: 16px;
+	}
+
+	.popup-content:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.popup-content > .btn {
+		float: left;
+		clear: left;
+	}
+	.word {
+		float: left;
+		width: 150px;
+		margin: 10px 0;
+	}
+
+	.word:nth-of-type(odd) {
+		clear: left;
+	}
+
+	.btn {
+		color: #fff;
+		background-color: #428bca;
+		border-color: #357ebd;
+		font-weight: 400;
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid transparent;
+		white-space: nowrap;
+		padding: 6px 12px;
+		font-size: 14px;
+		border-radius: 4px;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+</style>
+<div class="popup-content">
+	<h1 class="popup-header">Random russian words:</h1>
+	<div class="word">1</div>
+	<div class="word">1</div>
+	<div class="word">1</div>
+	<div class="word">1</div>
+	<div class="word">1</div>
+	<div class="word">1</div>
+
+	<button class="btn btn-generate-new">Generate New</button>
+</div>
