@@ -5,8 +5,11 @@
 		margin: 10px;
 	}
 
+	.separator {
+		border-bottom: 1px solid #999;
+	}
+
 	.popup-header {
-		padding-bottom: 0px;
 		font-size: 16px;
 	}
 
@@ -16,10 +19,18 @@
 		clear: both;
 	}
 
-	.popup-content > .btn {
+	.btn-generate-new {
 		float: left;
 		clear: left;
+		margin-top: 15px;
 	}
+
+	.word-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
 	.word {
 		float: left;
 		width: 150px;
@@ -45,15 +56,24 @@
 		-webkit-user-select: none;
 		user-select: none;
 	}
+
+	.clearfix:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
 </style>
 <div class="popup-content">
 	<h1 class="popup-header">Random russian words:</h1>
-	<div class="word">1</div>
-	<div class="word">1</div>
-	<div class="word">1</div>
-	<div class="word">1</div>
-	<div class="word">1</div>
-	<div class="word">1</div>
-
+	<div class="separator"></div>
+	<ul class="word-list">
+		<li class="word"></li>
+		<li class="word"></li>
+		<li class="word"></li>
+		<li class="word"></li>
+		<li class="word"></li>
+		<li class="word"></li>
+	</ul>
+	<div class="separator clearfix"></div>
 	<button class="btn btn-generate-new">Generate New</button>
 </div>
